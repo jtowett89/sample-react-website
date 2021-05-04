@@ -1,25 +1,111 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Services from "./components/Services";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import "./css/style.css";
+// import "jquery/dist/jquery.min.js";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.min.js";
+// import "popper/dist/popper.min.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    return (
+      <>
+        <Router>
+          <Nav />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={(props) => {
+                return (
+                  <Home
+                    {...props}
+                    text={`Welcome to XYZ Company`}
+                    tagline={`We are here to serve you!`}
+                    bgUrl={`https://images.wallpaperscraft.com/image/night_city_street_car_113387_1280x720.jpg`}
+                    bannerHeight={`100vh`}
+                    showTagline={true}
+                  />
+                );
+              }}
+            />
+            <Route
+              path="/about/"
+              component={(props) => {
+                return (
+                  <About
+                    {...props}
+                    text={`About Us`}
+                    tagline={``}
+                    bgUrl={`https://images.wallpaperscraft.com/image/night_city_street_road_158135_1280x720.jpg`}
+                    bannerHeight={`50vh`}
+                    showTagline={false}
+                  />
+                );
+              }}
+            />
+            <Route
+              path="/services/"
+              component={(props) => {
+                return (
+                  <Services
+                    {...props}
+                    text="Our Services"
+                    tagline={``}
+                    bgUrl={`https://images.wallpaperscraft.com/image/night_city_road_buildings_186588_1280x720.jpg`}
+                    bannerHeight={`50vh`}
+                    showTagline={false}
+                  />
+                );
+              }}
+            />
+            <Route
+              path="/gallery/"
+              component={(props) => {
+                return (
+                  <Gallery
+                    {...props}
+                    text="Gallery"
+                    tagline={``}
+                    bgUrl={`https://images.wallpaperscraft.com/image/night_city_buildings_road_140907_1280x720.jpg`}
+                    bannerHeight={`50vh`}
+                    showTagline={false}
+                  />
+                );
+              }}
+            />
+            <Route
+              path="/contact/"
+              component={(props) => {
+                return (
+                  <Contact
+                    {...props}
+                    text={`Contact Us`}
+                    tagline={``}
+                    bgUrl={`https://images.wallpaperscraft.com/image/night_city_skyscrapers_buildings_181631_1280x720.jpg`}
+                    bannerHeight={`50vh`}
+                    showTagline={false}
+                  />
+                );
+              }}
+            />
+          </Switch>
+        </Router>
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default App;
