@@ -26,7 +26,7 @@ class App extends Component {
           <Switch>
             <Route
               exact
-              path="/sample-react-website/"
+              path="/"
               component={(props) => {
                 return (
                   <Home
@@ -41,7 +41,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/sample-react-website/about/"
+              path="/about/"
               component={(props) => {
                 return (
                   <About
@@ -56,7 +56,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/sample-react-website/services/"
+              path="/services/"
               component={(props) => {
                 return (
                   <Services
@@ -71,7 +71,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/sample-react-website/gallery/"
+              path="/gallery/"
               component={(props) => {
                 return (
                   <Gallery
@@ -86,7 +86,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/sample-react-website/contact/"
+              path="/contact/"
               component={(props) => {
                 return (
                   <Contact
