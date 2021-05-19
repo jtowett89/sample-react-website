@@ -8,10 +8,6 @@ import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import "./css/style.css";
-// import "jquery/dist/jquery.min.js";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.min.js";
-// import "popper/dist/popper.min.js";
 
 class App extends Component {
   constructor(props) {
@@ -101,8 +97,8 @@ class App extends Component {
               }}
             />
           </Switch>
+          <Footer />
         </Router>
-        <Footer />
       </>
     );
   }
