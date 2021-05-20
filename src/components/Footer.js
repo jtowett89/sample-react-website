@@ -6,21 +6,33 @@ class Footer extends Component {
     super(props);
     this.state = {};
   }
+
+  scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   render() {
     return (
       <div className="footer">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link onClick={this.scrollToTop} to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about/">About</Link>
+            <Link onClick={this.scrollToTop} to="/about/">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/services/">Services</Link>
+            <Link onClick={this.scrollToTop} to="/services/">
+              Services
+            </Link>
           </li>
           <li>
-            <Link to="/contact/">Contact</Link>
+            <Link onClick={this.scrollToTop} to="/contact/">
+              Contact
+            </Link>
           </li>
         </ul>
         <p>
