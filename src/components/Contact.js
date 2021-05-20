@@ -77,10 +77,7 @@ class Contact extends Component {
     });
 
     if (validateInputs(name, email, subject, message)) {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("subject").value = "";
-      document.getElementById("message").value = "";
+      this.setState({ name: "", email: "", subject: "", message: "" });
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
