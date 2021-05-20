@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/sample-react-website/static/css/main.f9666068.chunk.css",
-    "main.js": "/sample-react-website/static/js/main.3ab3f504.chunk.js",
-    "main.js.map": "/sample-react-website/static/js/main.3ab3f504.chunk.js.map",
-    "runtime-main.js": "/sample-react-website/static/js/runtime-main.ee6a2fc1.js",
-    "runtime-main.js.map": "/sample-react-website/static/js/runtime-main.ee6a2fc1.js.map",
-    "static/js/2.f7fd6750.chunk.js": "/sample-react-website/static/js/2.f7fd6750.chunk.js",
-    "static/js/2.f7fd6750.chunk.js.map": "/sample-react-website/static/js/2.f7fd6750.chunk.js.map",
-    "static/js/3.0c24d2cd.chunk.js": "/sample-react-website/static/js/3.0c24d2cd.chunk.js",
-    "static/js/3.0c24d2cd.chunk.js.map": "/sample-react-website/static/js/3.0c24d2cd.chunk.js.map",
+    "main.js": "/sample-react-website/static/js/main.3792bc75.chunk.js",
+    "main.js.map": "/sample-react-website/static/js/main.3792bc75.chunk.js.map",
+    "runtime-main.js": "/sample-react-website/static/js/runtime-main.5fae78a6.js",
+    "runtime-main.js.map": "/sample-react-website/static/js/runtime-main.5fae78a6.js.map",
+    "static/js/2.74e54aa0.chunk.js": "/sample-react-website/static/js/2.74e54aa0.chunk.js",
+    "static/js/2.74e54aa0.chunk.js.map": "/sample-react-website/static/js/2.74e54aa0.chunk.js.map",
+    "static/js/3.b4caeadd.chunk.js": "/sample-react-website/static/js/3.b4caeadd.chunk.js",
+    "static/js/3.b4caeadd.chunk.js.map": "/sample-react-website/static/js/3.b4caeadd.chunk.js.map",
     "index.html": "/sample-react-website/index.html",
     "static/css/main.f9666068.chunk.css.map": "/sample-react-website/static/css/main.f9666068.chunk.css.map",
-    "static/js/2.f7fd6750.chunk.js.LICENSE.txt": "/sample-react-website/static/js/2.f7fd6750.chunk.js.LICENSE.txt",
+    "static/js/2.74e54aa0.chunk.js.LICENSE.txt": "/sample-react-website/static/js/2.74e54aa0.chunk.js.LICENSE.txt",
     "static/media/about.4725b6de.jpg": "/sample-react-website/static/media/about.4725b6de.jpg",
     "static/media/home.f6028580.jpg": "/sample-react-website/static/media/home.f6028580.jpg",
     "static/media/home2.b5b266bf.jpg": "/sample-react-website/static/media/home2.b5b266bf.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee6a2fc1.js",
-    "static/js/2.f7fd6750.chunk.js",
+    "static/js/runtime-main.5fae78a6.js",
+    "static/js/2.74e54aa0.chunk.js",
     "static/css/main.f9666068.chunk.css",
-    "static/js/main.3ab3f504.chunk.js"
+    "static/js/main.3792bc75.chunk.js"
   ]
 }
