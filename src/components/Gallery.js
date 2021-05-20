@@ -4,7 +4,19 @@ import Banner from "./Banner";
 class Gallery extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      imgData: [],
+    };
+  }
+  componentDidMount() {
+    fetch("api.pexels.com/v1/search?query=nature")
+      .then((response) => {
+        response.json();
+      })
+      .then((data) => {
+        this.setState({ imgData: data });
+        console.log(data);
+      });
   }
   render() {
     return (

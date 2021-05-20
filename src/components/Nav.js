@@ -8,7 +8,9 @@ class Nav extends Component {
   }
   handleClick = () => {
     var x = document.getElementById("navbarNav").classList.remove("show");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   render() {
     return (
       <>
