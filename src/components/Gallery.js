@@ -16,6 +16,11 @@ class Gallery extends Component {
           showTagline={this.props.showTagline}
           bannerHeight={this.props.bannerHeight}
         />
+        <div className="content">
+          <div className="text-center">
+            <h1>There's nothing at the moment. Please check again later</h1>
+          </div>
+        </div>
       </>
     );
   }

@@ -60,6 +60,15 @@ class Nav extends Component {
                   <Link
                     className="nav-link"
                     onClick={this.handleClick}
+                    to="/gallery/"
+                  >
+                    Gallery
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    onClick={this.handleClick}
                     to="/contact/"
                   >
                     Contact

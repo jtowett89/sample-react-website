@@ -30,6 +30,11 @@ class Footer extends Component {
             </Link>
           </li>
           <li>
+            <Link onClick={this.scrollToTop} to="/gallery/">
+              Gallery
+            </Link>
+          </li>
+          <li>
             <Link onClick={this.scrollToTop} to="/contact/">
               Contact
             </Link>
