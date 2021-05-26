@@ -167,8 +167,7 @@ nav {
   transition: all 0.5s;
 }
 .swal2-confirm:hover,
-.swal2-confirm:active,
-.swal2-confirm:focus {
+.swal2-confirm:active {
   color: #000 !important;
   background-color: #fff !important;
 }
