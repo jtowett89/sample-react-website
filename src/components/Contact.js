@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Banner from "./Banner";
+import Swal from "sweetalert2";
 
 class Contact extends Component {
   constructor(props) {
@@ -27,38 +28,43 @@ class Contact extends Component {
       var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if (name.length < 3) {
         var returnText = "Your name should be at least 3 characters long";
-        document.getElementById("alert").innerHTML =
-          '<div class="alert alert-danger"><a href="#" data-dismiss="alert" class="close">&times;</a>' +
-          returnText +
-          "</div>";
+        Swal.fire({
+          title: returnText,
+          text: "",
+          type: "error",
+        });
         return false;
       } else if (!re.test(email)) {
         var returnText = "Please enter a valid email";
-        document.getElementById("alert").innerHTML =
-          '<div class="alert alert-danger"><a href="#" data-dismiss="alert" class="close">&times;</a>' +
-          returnText +
-          "</div>";
+        Swal.fire({
+          title: returnText,
+          text: "",
+          type: "error",
+        });
         return false;
       } else if (subject.length < 3) {
         var returnText = "Your subject should be at least 3 characters long";
-        document.getElementById("alert").innerHTML =
-          '<div class="alert alert-danger"><a href="#" data-dismiss="alert" class="close">&times;</a>' +
-          returnText +
-          "</div>";
+        Swal.fire({
+          title: returnText,
+          text: "",
+          type: "error",
+        });
         return false;
       } else if (message.length < 3) {
         var returnText = "Your message should be at least 3 characters long";
-        document.getElementById("alert").innerHTML =
-          '<div class="alert alert-danger"><a href="#" data-dismiss="alert" class="close">&times;</a>' +
-          returnText +
-          "</div>";
+        Swal.fire({
+          title: returnText,
+          text: "",
+          type: "error",
+        });
         return false;
       } else {
         var returnText = "Message Sent Successfully";
-        document.getElementById("alert").innerHTML =
-          '<div class="alert alert-success"><a href="#" data-dismiss="alert" class="close">&times;</a>' +
-          returnText +
-          "</div>";
+        Swal.fire({
+          title: returnText,
+          text: "",
+          type: "success",
+        });
         return true;
       }
     }
@@ -77,10 +83,10 @@ class Contact extends Component {
     });
 
     if (validateInputs(name, email, subject, message)) {
-      this.setState({ name: "", email: "", subject: "", message: "" });
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
     }
   };
   render() {
