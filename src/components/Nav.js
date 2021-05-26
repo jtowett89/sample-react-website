@@ -19,7 +19,7 @@ class Nav extends Component {
           className="fixed-top navbar navbar-expand-lg "
         >
           <div className="container">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/sample-react-website/">
               XYZ
             </Link>
             <button
@@ -36,7 +36,11 @@ class Nav extends Component {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="my_ul navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <Link className="nav-link" onClick={this.handleClick} to="/">
+                  <Link
+                    className="nav-link"
+                    onClick={this.handleClick}
+                    to="/sample-react-website/"
+                  >
                     Home
                   </Link>
                 </li>
@@ -44,7 +48,7 @@ class Nav extends Component {
                   <Link
                     className="nav-link"
                     onClick={this.handleClick}
-                    to="/about/"
+                    to="/sample-react-website/about/"
                   >
                     About
                   </Link>
@@ -53,7 +57,7 @@ class Nav extends Component {
                   <Link
                     className="nav-link"
                     onClick={this.handleClick}
-                    to="/services/"
+                    to="/sample-react-website/services/"
                   >
                     Services
                   </Link>
@@ -62,7 +66,7 @@ class Nav extends Component {
                   <Link
                     className="nav-link"
                     onClick={this.handleClick}
-                    to="/gallery/"
+                    to="/sample-react-website/gallery/"
                   >
                     Gallery
                   </Link>
@@ -71,7 +75,7 @@ class Nav extends Component {
                   <Link
                     className="nav-link"
                     onClick={this.handleClick}
-                    to="/contact/"
+                    to="/sample-react-website/contact/"
                   >
                     Contact
                   </Link>

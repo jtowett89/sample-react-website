@@ -15,27 +15,36 @@ class Footer extends Component {
       <div className="footer">
         <ul>
           <li>
-            <Link onClick={this.scrollToTop} to="/">
+            <Link onClick={this.scrollToTop} to="/sample-react-website/">
               Home
             </Link>
           </li>
           <li>
-            <Link onClick={this.scrollToTop} to="/about/">
+            <Link onClick={this.scrollToTop} to="/sample-react-website/about/">
               About
             </Link>
           </li>
           <li>
-            <Link onClick={this.scrollToTop} to="/services/">
+            <Link
+              onClick={this.scrollToTop}
+              to="/sample-react-website/services/"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link onClick={this.scrollToTop} to="/gallery/">
+            <Link
+              onClick={this.scrollToTop}
+              to="/sample-react-website/gallery/"
+            >
               Gallery
             </Link>
           </li>
           <li>
-            <Link onClick={this.scrollToTop} to="/contact/">
+            <Link
+              onClick={this.scrollToTop}
+              to="/sample-react-website/contact/"
+            >
               Contact
             </Link>
           </li>
