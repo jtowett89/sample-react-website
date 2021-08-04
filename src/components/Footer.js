@@ -52,7 +52,11 @@ class Footer extends Component {
         <p>
           &copy; {new Date().getFullYear()} XYZ Company. All rights reserved.
           Developed by{" "}
-          <a href="https://justice.zerone.co.ke" target="_blank">
+          <a
+            href="https://justice.zerone.co.ke"
+            target="_blank"
+            rel="noreferrer"
+          >
             Justice Towett
           </a>
         </p>

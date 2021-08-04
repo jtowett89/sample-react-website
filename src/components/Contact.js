@@ -25,9 +25,11 @@ class Contact extends Component {
     var message = document.getElementById("message").value;
 
     function validateInputs(name, email, subject, message) {
-      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      let returnText;
+      var re =
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       if (name.length < 3) {
-        var returnText = "Your name should be at least 3 characters long";
+        returnText = "Your name should be at least 3 characters long";
         Swal.fire({
           title: returnText,
           text: "",
@@ -35,7 +37,7 @@ class Contact extends Component {
         });
         return false;
       } else if (!re.test(email)) {
-        var returnText = "Please enter a valid email";
+        returnText = "Please enter a valid email";
         Swal.fire({
           title: returnText,
           text: "",
@@ -43,7 +45,7 @@ class Contact extends Component {
         });
         return false;
       } else if (subject.length < 3) {
-        var returnText = "Your subject should be at least 3 characters long";
+        returnText = "Your subject should be at least 3 characters long";
         Swal.fire({
           title: returnText,
           text: "",
@@ -51,7 +53,7 @@ class Contact extends Component {
         });
         return false;
       } else if (message.length < 3) {
-        var returnText = "Your message should be at least 3 characters long";
+        returnText = "Your message should be at least 3 characters long";
         Swal.fire({
           title: returnText,
           text: "",
@@ -59,7 +61,7 @@ class Contact extends Component {
         });
         return false;
       } else {
-        var returnText = "Message Sent Successfully";
+        returnText = "Message Sent Successfully";
         Swal.fire({
           title: returnText,
           text: "",

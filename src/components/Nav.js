@@ -7,7 +7,7 @@ class Nav extends Component {
     this.state = {};
   }
   handleClick = () => {
-    var x = document.getElementById("navbarNav").classList.remove("show");
+    document.getElementById("navbarNav").classList.remove("show");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -19,7 +19,11 @@ class Nav extends Component {
           className="fixed-top navbar navbar-expand-lg "
         >
           <div className="container">
-            <Link className="navbar-brand" to="/sample-react-website/">
+            <Link
+              className="navbar-brand"
+              onClick={this.handleClick}
+              to="/sample-react-website/"
+            >
               XYZ
             </Link>
             <button
